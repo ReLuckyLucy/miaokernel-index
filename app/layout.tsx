@@ -10,19 +10,19 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "渺核科技｜让微小产生巨大",
-    description: "东莞市渺核科技有限公司，以工程与产品创新连接感知、计算与行动。",
-    icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+    title: "渺核科技｜渺见未来，核聚价值",
+    description: "东莞市渺核科技有限公司——渺见未来，核聚价值。",
+    icons: { icon: "/miaokernel-logo.svg", shortcut: "/miaokernel-logo.svg" },
     openGraph: {
-      title: "渺核科技｜让微小产生巨大",
-      description: "从一个细微的信号开始，连接感知、计算与行动。",
+      title: "渺核科技｜渺见未来，核聚价值",
+      description: "渺见未来，核聚价值。",
       type: "website",
       images: [{ url: `${origin}/og.png`, width: 1792, height: 896, alt: "渺核科技" }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "渺核科技｜让微小产生巨大",
-      description: "从一个细微的信号开始，连接感知、计算与行动。",
+      title: "渺核科技｜渺见未来，核聚价值",
+      description: "渺见未来，核聚价值。",
       images: [`${origin}/og.png`],
     },
   };

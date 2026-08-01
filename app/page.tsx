@@ -85,7 +85,7 @@ function ParticleField() {
           particle.x = Math.random() * width;
         }
         const glow = Math.max(0, 1 - distance / Math.max(width, height));
-        ctx.fillStyle = `rgba(188, 255, 45, ${particle.alpha * (0.55 + glow)})`;
+        ctx.fillStyle = `rgba(144, 219, 242, ${particle.alpha * (0.55 + glow)})`;
         ctx.fillRect(
           Math.round(particle.x),
           Math.round(particle.y),
@@ -155,14 +155,10 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="渺核科技首页" onClick={closeMenu}>
-          <span className="brand-mark" aria-hidden="true">
-            <i />
-            <i />
-            <i />
-          </span>
+          <img className="brand-logo" src="/miaokernel-logo.svg" alt="" aria-hidden="true" />
           <span>
             渺核科技
-            <small>MIAOHE TECHNOLOGY</small>
+            <small>MIAOKERNEL TECHNOLOGY</small>
           </span>
         </a>
         <button
@@ -194,11 +190,11 @@ export default function Home() {
         <div className="hero-copy">
           <div className="eyebrow hero-eyebrow">
             <span>东莞 · 中国</span>
-            <span>科技，让微小产生巨大</span>
+            <span>MIAOKERNEL / TECHNOLOGY</span>
           </div>
           <h1>
-            <span>微小之核</span>
-            <span className="outline-text">无限协同</span>
+            <span>渺见未来</span>
+            <span className="outline-text">核聚价值</span>
           </h1>
           <div className="hero-bottom">
             <p>
@@ -221,7 +217,7 @@ export default function Home() {
       <section id="about" className="statement section-light">
         <div className="section-label" data-reveal>
           <span>[ 01 ]</span>
-          <span>ABOUT MIAOHE</span>
+          <span>ABOUT MIAOKERNEL</span>
           <span>关于渺核</span>
         </div>
         <div className="statement-title" data-reveal>
@@ -295,7 +291,7 @@ export default function Home() {
       </section>
 
       <section className="marquee-section" aria-label="品牌宣言">
-        <div className="marquee-line">MIAOHE · FROM SIGNAL TO SYSTEM · 渺核科技 · FROM SIGNAL TO SYSTEM ·&nbsp;</div>
+        <div className="marquee-line">MIAOKERNEL · FROM SIGNAL TO SYSTEM · 渺核科技 · FROM SIGNAL TO SYSTEM ·&nbsp;</div>
         <div className="marquee-line reverse">BUILD THE UNSEEN · CREATE THE POSSIBLE · 构建未见 · 创造可能 ·&nbsp;</div>
       </section>
 
@@ -314,12 +310,12 @@ export default function Home() {
         </div>
         <footer>
           <div className="brand footer-brand">
-            <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
-            <span>渺核科技<small>MIAOHE TECHNOLOGY</small></span>
+            <img className="brand-logo" src="/miaokernel-logo.svg" alt="" aria-hidden="true" />
+            <span>渺核科技<small>MIAOKERNEL TECHNOLOGY</small></span>
           </div>
           <div>
             <span>东莞市渺核科技有限公司</span>
-            <span>© 2026 MIAOHE TECHNOLOGY</span>
+            <span>© 2026 MIAOKERNEL TECHNOLOGY</span>
           </div>
         </footer>
       </section>
