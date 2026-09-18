@@ -1,4 +1,4 @@
-"use client";
+"use client"; // 可保留,纯 React 中无副作用
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
