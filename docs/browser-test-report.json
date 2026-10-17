@@ -1,0 +1,13 @@
+{
+  "mode": "isolated Chromium, HTML injected in memory; no external navigation",
+  "passed": [
+    "1440x900: assets, scene navigation, canvas, pause, rain, modal, copy feedback, console passed",
+    "1024x768: no horizontal overflow; mobile navigation passed where applicable",
+    "768x1024: no horizontal overflow; mobile navigation passed where applicable",
+    "390x844: no horizontal overflow; mobile navigation passed where applicable",
+    "320x740: no horizontal overflow; mobile navigation passed where applicable",
+    "reduced-motion: static render and motion controls passed",
+    "no JavaScript: content and project entry remain available"
+  ],
+  "page_errors": []
+}

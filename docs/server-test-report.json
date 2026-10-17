@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "GET /: 200; brand content present",
+    "GET /styles.css: 200",
+    "GET /assets/brand-mark.svg: 200",
+    "GET /dist/index.html: 200",
+    "HEAD /: 200",
+    "GET /missing-file.html: 404",
+    "POST /: 405",
+    "GET /%2e%2e%2fprivate.txt: 403",
+    "User-provided SVG: exact byte match"
+  ],
+  "logo_sha256": "993835fd7af248b67ddf02ee869d0c81d42be7175bb64f04d3ffa3d8578932d2"
+}

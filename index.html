@@ -1,14 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/miaokernel-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="东莞市渺核科技有限公司——渺见未来，核聚价值。" />
-    <title>渺核科技｜渺见未来，核聚价值</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="渺核科技 · 渺见未来，核聚价值。探索我们的理念与项目实践：GDMU-NA TokenHub 大模型网关。">
+  <meta property="og:title" content="渺核科技 · 渺见未来，核聚价值">
+  <meta property="og:description" content="从微小处，构建无限可能。探索 GDMU-NA TokenHub 大模型网关。">
+  <title>渺核科技 · 渺见未来，核聚价值</title>
+  <link rel="icon" href="assets/brand-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="js/core.js"></script>
+  <script defer src="js/visuals.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <div class="world" aria-hidden="true"><canvas id="universe"></canvas><div class="grain"></div><div class="vignette"></div></div>
+  <canvas id="transition-rain" class="transition-rain" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="渺核科技，回到首页">
+      <img class="brand-mark" src="assets/brand-mark.svg" width="38" height="38" alt="">
+      <span class="brand-wordmark"><img src="assets/brand-title.svg" width="102" height="23" alt="渺核科技"><span class="brand-en">MIAOHE TECH</span></span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#about" data-nav="about"><span class="nav-cross">+</span> 关于渺核</a>
+      <a href="#projects" data-nav="projects"><span class="nav-cross">+</span> 项目实践</a>
+      <a href="#future" data-nav="future"><span class="nav-cross">+</span> 探索未来</a>
+    </nav>
+    <a class="header-project" href="https://tokenhub-tunnel.apps.gdmuna.com/" target="_blank" rel="noopener noreferrer"><span>TokenHub</span><span class="arrow-ne" aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="打开导航" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+  </header>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="移动导航" hidden>
+    <a href="#home">00 / 首页</a><a href="#about">01 / 关于渺核</a><a href="#projects">02 / 项目实践</a><a href="#future">03 / 探索未来</a>
+  </nav>
+  <main id="main">
+    <section class="scene hero" id="home" aria-labelledby="hero-title" data-scene="0">
+      <div class="scene-code">[ 00 — ORIGIN ]</div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="square"></span> SMALL IN SCALE. INFINITE IN POSSIBILITY.</p>
+        <h1 class="hero-title" id="hero-title" aria-label="渺见未来，核聚价值">
+          <img class="pixel-line" src="assets/slogan-1.svg" alt="渺见未来" width="87" height="20">
+          <img class="pixel-line second" src="assets/slogan-2.svg" alt="核聚价值" width="87" height="20">
+          <span class="title-cursor" aria-hidden="true"></span>
+        </h1>
+        <p class="hero-intro">从微小处，构建无限可能。</p>
+        <div class="hero-actions">
+          <a class="pixel-button primary" href="#about"><span>开始探索</span><span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#projects">认识 TokenHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="core-label" aria-hidden="true"><span class="crosshair">+</span><div>THE MIAOHE CORE<span>SMALL ORIGIN / INFINITE POTENTIAL</span></div></div>
+      <div class="hero-footnote"><span class="mini-cross">✳</span><p>以好奇为起点。<br><span>以创造，回应未来。</span></p></div>
+      <a class="scroll-hint" href="#about"><span class="scroll-shape" aria-hidden="true"></span><span>向下滚动，开始探索</span></a>
+      <div class="coordinate" aria-hidden="true"><span>X <span id="pointer-x">0000</span> / Y <span id="pointer-y">0000</span></span><span>RENDER / PIXEL CORE</span></div>
+    </section>
+
+    <section class="scene about" id="about" aria-labelledby="about-title" data-scene="1">
+      <div class="scene-code">[ 01 — PHILOSOPHY ]</div>
+      <div class="about-visual-label" aria-hidden="true"><span>01 / THE SMALLEST BEGINNING</span><div class="bracket-label">微小，不是边界。</div><span>IT'S WHERE EVERYTHING BEGINS.</span></div>
+      <div class="about-copy">
+        <p class="eyebrow">渺核 · 关于我们</p>
+        <h2 id="about-title" class="about-title"><img src="assets/about-1.svg" alt="从微小处" width="88" height="20"><img src="assets/about-2.svg" alt="构建无限可能" width="134" height="20"></h2>
+        <div class="manifesto"><p><strong>渺</strong>，是看见尚未显现的可能。<br><strong>核</strong>，是聚合创造价值的力量。</p><p>我们相信，值得构建的未来，<br>始于一个小小的想法，<br>也成于每一次认真创造。</p></div>
+        <div class="principles"><div><span>01</span><p>保持好奇</p><span>STAY CURIOUS</span></div><div><span>02</span><p>深入本质</p><span>GO DEEPER</span></div><div><span>03</span><p>创造价值</p><span>MAKE IT MATTER</span></div></div>
+        <a class="text-link underline-link" href="#projects">让作品继续表达 <span aria-hidden="true">↘</span></a>
+      </div>
+      <a class="scroll-hint" href="#projects"><span class="scroll-shape" aria-hidden="true"></span><span>探索项目实践</span></a>
+    </section>
+
+    <section class="scene projects" id="projects" aria-labelledby="project-title" data-scene="2">
+      <div class="scene-code">[ 02 — SELECTED WORK ]</div>
+      <div class="project-layout">
+        <div class="project-copy">
+          <p class="eyebrow"><span class="square"></span> 项目实践 / PROJECT 001</p>
+          <p class="project-prefix">GDMU-NA</p>
+          <h2 id="project-title"><img class="tokenhub-title" src="assets/tokenhub.svg" alt="TokenHub" width="86" height="17"></h2>
+          <div class="project-category"><span class="category-block" aria-hidden="true">⌘</span><span>大模型网关</span><span class="category-en">LLM GATEWAY</span></div>
+          <p class="project-description">让每一个 Token，<br>连接更多可能。</p>
+          <p class="project-support">把接入的复杂性留给网关，<br>把构建的创造力留给你。</p>
+          <div class="project-actions"><a class="pixel-button primary" href="https://tokenhub-tunnel.apps.gdmuna.com/" target="_blank" rel="noopener noreferrer">访问 TokenHub <span aria-hidden="true">↗</span></a><button class="text-link" id="project-info">项目简介 <span aria-hidden="true">+</span></button></div>
+        </div>
+        <div class="terminal" aria-label="TokenHub 项目概念演示，不是实时接口数据">
+          <div class="terminal-titlebar"><span><i></i><i></i><i></i></span><span>tokenhub / gateway.exe</span><span class="terminal-corner">↗</span></div>
+          <div class="terminal-body">
+            <div class="terminal-line muted">MIAOHE TECH / PROJECT EXPLORER</div>
+            <div class="terminal-line command"><span>~/projects $</span> inspect tokenhub<span class="blink-block" aria-hidden="true"></span></div>
+            <div class="terminal-divider">────────────────────────────────────</div>
+            <dl class="project-data"><div><dt>PROJECT</dt><dd>GDMU-NA TokenHub</dd></div><div><dt>TYPE</dt><dd>LLM Gateway</dd></div><div><dt>FOCUS</dt><dd>大模型网关</dd></div></dl>
+            <div class="gateway-diagram" aria-hidden="true"><div class="diagram-node small">APPLICATION<span>应用</span></div><div class="diagram-track"><i></i></div><div class="diagram-node core-node"><span class="node-icon">⠿</span>TOKENHUB</div><div class="diagram-track"><i></i></div><div class="diagram-node small">MODEL<span>模型</span></div></div>
+            <div class="terminal-line log-line"><span class="muted">[idea]</span> start with a token.</div>
+            <div class="terminal-line log-line"><span class="muted">[build]</span> connect to possibilities.</div>
+            <div class="terminal-link"><span class="terminal-prompt">↳</span><span>tokenhub-tunnel.apps.gdmuna.com</span><button id="copy-project" class="icon-button" aria-label="复制 TokenHub 项目网址" title="复制项目网址"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 7h9v10H7zM4 13H2V2h10v2" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+          </div>
+          <div class="terminal-footer"><span class="demo-dot"></span><span>概念示意 · 非实时监控</span><span>DEMO_001</span></div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#future"><span class="scroll-shape" aria-hidden="true"></span><span>继续向未来</span></a>
+    </section>
+
+    <section class="scene future" id="future" aria-labelledby="future-title" data-scene="3">
+      <div class="scene-code">[ 03 — WHAT'S NEXT ]</div>
+      <div class="future-copy"><p class="eyebrow">THE NEXT POSSIBILITY STARTS HERE.</p><h2 id="future-title"><img class="future-line-one" src="assets/future-1.svg" alt="未来" width="42" height="20"><img src="assets/future-2.svg" alt="不止想象" width="88" height="20"></h2><p>保持好奇，认真创造。<br>让下一个可能，从这里发生。</p><a class="pixel-button primary" href="https://tokenhub-tunnel.apps.gdmuna.com/" target="_blank" rel="noopener noreferrer">从 TokenHub 开始 <span aria-hidden="true">↗</span></a></div>
+      <footer class="site-footer"><div><span class="footer-brand">渺核科技</span><span>渺见未来，核聚价值。</span></div><a href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a><p>© <span id="year">2026</span> MIAOHE TECH</p></footer>
+    </section>
+  </main>
+  <aside class="scene-indicator" aria-label="场景导航"><a href="#home" aria-label="00 首页" aria-current="location"><span>00</span><i></i></a><a href="#about" aria-label="01 关于渺核"><span>01</span><i></i></a><a href="#projects" aria-label="02 项目实践"><span>02</span><i></i></a><a href="#future" aria-label="03 探索未来"><span>03</span><i></i></a></aside>
+  <div class="visual-controls"><button id="rain-toggle" aria-pressed="false" title="切换为更明显的代码雨"><span class="control-icon" aria-hidden="true">⌗</span><span class="control-text">代码雨</span></button><span class="control-divider"></span><button id="motion-toggle" aria-pressed="false" aria-label="暂停动态效果"><span class="pause-icon" aria-hidden="true">Ⅱ</span><span class="control-text">动效开</span></button></div>
+  <dialog id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span>PROJECT / 001</span><button id="close-dialog" class="icon-button" aria-label="关闭项目简介">×</button></div><p class="eyebrow">渺核科技 · 项目实践</p><h2 id="dialog-title">GDMU-NA TokenHub</h2><p>大模型网关</p><div class="dialog-rule"></div><p class="dialog-description">这是渺核科技的项目展示入口。<br>访问项目站，了解 TokenHub 的实际功能与使用方式。</p><a class="pixel-button primary" href="https://tokenhub-tunnel.apps.gdmuna.com/" target="_blank" rel="noopener noreferrer">打开项目 <span aria-hidden="true">↗</span></a><p class="dialog-note">页面中的终端与链路图仅为概念演示，不代表实时服务状态。</p></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="no-js">动态效果已关闭，仍可正常浏览内容及访问项目。</div></noscript>
+</body>
 </html>
