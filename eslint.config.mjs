@@ -1,7 +1,14 @@
-// 简化的 ESLint 配置 - 仅启用 TypeScript 推荐规则
-// 如需更严格的规则,可手动扩展(本项目以"能跑"为先)
-export default [
+import js from "@eslint/js";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config(
+  { ignores: ["dist/**", "node_modules/**"] },
+  { files: ["**/*.{js,mjs}"], ...js.configs.recommended },
+  ...tseslint.configs.recommended,
   {
-    ignores: ["dist/**", "node_modules/**"],
+    files: ["tests/**/*.mjs"],
+    languageOptions: {
+      globals: { fetch: "readonly", URL: "readonly" },
+    },
   },
-];
+);

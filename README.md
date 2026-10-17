@@ -4,7 +4,9 @@
 
 ![首页预览](docs/homepage.png)
 
+## v1.0.0 归档版本
 
+[GitHub Release v1.0.0](https://github.com/ReLuckyLucy/miaokernel-index/releases/tag/v1.0.0) 提供源码快照和可直接部署的静态站点 ZIP。部署时解压静态站点 ZIP，并将其中的全部文件放在静态网站根目录。
 
 ## 项目简介
 
